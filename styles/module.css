@@ -1,0 +1,52 @@
+/* Module styles */
+
+/* GM-Only Block Styles */
+/* Removed all styles related to gm-only-block */
+
+blockquote.gm-only,
+div.gm-only,
+section.gm-only,
+p.gm-only {
+    background-color: rgba(128, 0, 128, 0.1);
+    border-left: 4px solid purple;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    position: relative;
+}
+
+blockquote.gm-only.gm-visible::before,
+div.gm-only.gm-visible::before,
+section.gm-only.gm-visible::before,
+p.gm-only.gm-visible::before {
+    content: "GM Only";
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: purple;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}
+
+.editor-content blockquote.gm-only,
+.editor-content div.gm-only,
+.editor-content section.gm-only,
+.editor-content p.gm-only {
+    background-color: rgba(128, 0, 128, 0.2);
+    border-left: 4px solid purple;
+    padding: 0.5em 1em;
+    margin: 0.5em 0;
+    position: relative;
+}
+
+.editor-content blockquote.gm-only::before,
+.editor-content div.gm-only::before,
+.editor-content section.gm-only::before,
+.editor-content p.gm-only::before {
+    content: "GM Only";
+    display: block;
+    font-size: 0.8em;
+    font-weight: bold;
+    color: purple;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+}

@@ -1,0 +1,47 @@
+{
+    "SALAMANDERS": {
+        "Settings": {
+            "EnableShowActorImage": {
+                "Name": "Enable Show Actor Image",
+                "Hint": "Adds ability to show actor portrait to all players via right-click on actor links in journals"
+            },
+            "EnableGoldenDragonArmor": {
+                "Name": "Enable Living Golden Dragon Armor",
+                "Hint": "Adds special rest mechanics for the Living Golden Dragon Armor item"
+            },
+            "enableDieStatusEffect": {
+                "Name": "Enable death status for affected",
+                "Hint": "Adds death status when hits drop to 0"
+            },
+            "enablePlayActorAudio": {
+                "Name": "Enable alternative audio launch",
+                "Hint": "Adds the ability to play and stop audio via right-click on links in journals. Correctly updates playlist icons."
+            },
+            "EnableShowSceneView": {
+                "Name": "Enable Show Scene View",
+                "Hint": "Adds ability to activate scene view for all players via right-click on scene links in journals"
+            },
+            "EnableLairActions": {
+                "Name": "Enable Lair Actions",
+                "Hint": "Automatically creates additional combatants for creatures with lair actions"
+            }
+        },
+        "GoldenDragonArmor": {
+            "DialogTitle": "Long Rest",
+            "DialogContent": "<p><strong>{actorName}</strong> has completed a long rest.</p><p>Choose one of two actions:</p><ul><li><strong>Spend</strong> half of available hit dice</li><li><strong>Get/Keep</strong> exhaustion level</li></ul>",
+            "SpendHitDice": "Spend Hit Dice",
+            "Exhaustion": "Exhaustion",
+            "NoHitDice": "{actorName} has no available hit dice to spend.",
+            "SpentHitDice": "{actorName} spends {spent} of {total} available hit dice.",
+            "ExhaustionExists": "{actorName} already has exhaustion (level remains unchanged).",
+            "ExhaustionAdded": "{actorName} gains level 1 exhaustion.",
+            "ExhaustionDescription": "<p><strong>-{level}</strong> subtracted from all D20 rolls (checks, attack rolls, saving throws) and spell save DC.</p><p>Each level of Exhaustion adds another <strong>-1</strong>.</p><p>A long rest <em>normally</em> removes one stack of exhaustion, but according to this armor's custom condition, the logic is different here.</p>"
+        },
+        "LairActions": {
+            "CombatantName": "{creatureName} - Lair Action",
+            "TurnNotification": "{creatureName}'s Lair Action turn",
+            "Created": "Created Lair Action combatant for {creatureName} at initiative {initiative}",
+            "CreationError": "Error creating Lair Action combatant"
+        }
+    }
+}
